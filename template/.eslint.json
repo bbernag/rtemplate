@@ -1,0 +1,35 @@
+{
+  "plugins": ["react,jest"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "spaced-comment": 0,
+    "react-hooks/exhaustive-deps": "error",
+    "react/self-closing-comp": 2,
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
+    "react-native/no-single-element-style-arrays": 2
+    // You can override any rules you want
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true,
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
